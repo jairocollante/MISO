@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aplicacion nombre= "MarketPlace UniViajes">
+	<tipo>Comercio</tipo>
+	<modulos>
+		<modulo>Login</modulo>
+		<modulo>Compras</modulo>
+	</modulos>
+	
+</aplicacion>

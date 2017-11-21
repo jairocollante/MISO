@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="aplicacion" >
+<xs:complexType>
+    <xs:sequence>
+    
+		<xs:element name="tipo">
+		  <xs:simpleType>
+		    <xs:restriction base="xs:string">
+		      <xs:enumeration value="Basico"/>
+		      <xs:enumeration value="Comercio"/>
+		    </xs:restriction>
+		  </xs:simpleType>
+		</xs:element>
+		
+		<xs:element name="modulos">
+		<xs:complexType>
+		<xs:sequence>
+		  	
+		     <xs:element name="modulo" type="xs:string" minOccurs="1" maxOccurs="5"/>
+		  
+		  </xs:sequence>
+		  </xs:complexType>
+		</xs:element>
+
+	</xs:sequence>
+	<xs:attribute name="nombre" type="xs:string" use="required"/>
+</xs:complexType>
+</xs:element>
+
+</xs:schema>
